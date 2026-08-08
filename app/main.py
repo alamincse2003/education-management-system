@@ -1,9 +1,16 @@
+from app.models.student import Student
+
+
 def main():
-    """
-    The main entry point for the application.
-    """
-    print("Starting the application...")
-    
+    student = Student(
+        name="Al Amin",
+        email="alamin@example.com",
+        age=23,
+        department="CSE",
+    )
+
+    print(student)
+
 
 if __name__ == "__main__":
     main()
